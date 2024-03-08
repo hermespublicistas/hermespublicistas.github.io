@@ -1,0 +1,302 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hermes Publicistas</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--<div id="app"></div>-->
+    
+        <div class="menu-container inactive">
+            <div class="overlay"></div>
+            <div class="menu-items">
+                <ul>
+                    <li><a href="#welcome-section" onclick="toggleMenu()">INICIO</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">NOSOTROS</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">PORTAFOLIO</a></li>
+                    <li><a href="#clients" onclick="toggleMenu()">CLIENTES</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">CONTACTO</a></li>
+                </ul>
+                <!-- Include SocialLinks content here -->
+            </div>
+        </div>
+    
+        <nav id="navbar">
+            <div class="nav-wrapper">
+                <p class="brand">
+                    <strong>Hermes</strong>Publicistas
+                </p>
+                <a id="themeButton" class="theme-button" onclick="toggleTheme()">
+                  <theme-button_image></theme-button_image>
+                </a>
+                <!--<img src="sun.png" style="width: 30px; cursor: pointer;" id="icon">-->
+                <a id="menu-button" class="menu-button" onclick="toggleMenu()"><!--onclick="toggleMenu()" -->
+                    <span></span>
+                </a>
+            </div>
+        </nav>
+    
+        <header id="welcome-section">
+          <div class="houses"></div>
+          <div class="silhouette"></div>
+          <div class="logo_hermes"></div>
+          <div class="container">
+              <h1>
+                  <span class="line"> </span>
+              </h1>
+              <h1>
+                  <span class="line">Publicidad</span>
+                  <span class="line">
+                      <span class="color">e</span> Imprenta.
+                  </span>
+              </h1>
+              <div class="buttons">
+                  <a href="#projects">Portafolio</a>
+                  <a href="#contact" class="cta">Contacto</a>
+              </div>
+          </div>
+        </header>
+    
+        <section id="about">
+            <div class="wrapper">
+                <article>
+                    <div class="title">
+                        <h3>¿Quiénes somos?</h3>
+                        <p class="separator"></p>
+                    </div>
+                    <div class="desc full">
+                        <h4 class="subtitle">Somos Hermes Publicistas.</h4>
+                        <p>
+                            Una agencia de publicidad con años de experiencia brindando soluciones de marketing a una amplia gama de empresas. Ya sea que necesite posicionar mejor su negocio o crear campañas publicitarias eficaces, estamos listos para ayudarlo. Nuestro enfoque personalizado y nuestro historial comprobado de resultados positivos para los clientes nos han convertido en la agencia líder de publicidad en Guanajuato, Guanajuato, México. Conozca cómo podemos ayudar a que su marca crezca y alcance nuevas audiencias. Póngase en contacto con nosotros hoy mismo para comenzar.
+                        </p>
+                    </div>
+                    <div class="title">
+                        <h3>Nosotros</h3>
+                        <p class="separator"></p>
+                    </div>
+                    <div class="desc">
+                        <h4 class="subtitle">Equipo.</h4>
+                        <p>
+                            El secreto de nuestro éxito radica en el equipo que hemos construido a lo largo de los últimos años. Nuestro equipo está formado por desarrolladores de contenidos, diseñadores gráficos y expertos en marketing. Cada miembro está altamente experimentado para proporcionar soluciones de publicidad a las empresas. Si su negocio tiene un producto o servicio que quiera promover, entonces seguramente le ayudaremos a llegar a esa audiencia con poco esfuerzo. Nuestro equipo participa activamente en sesiones regulares de desarrollo para mantenerse al día con las tendencias actuales de la industria.
+                        </p>
+                    </div>
+                    <div class="desc">
+                        <h4 class="subtitle">Servicios.</h4>
+                        <p>
+                            Hemos creado un flujo de trabajo consistente desde la planificación hasta la fase de aplicación. Nuestro servicio es dinámico y se basa en las necesidades de su negocio y en el mercado en el que usted está tratando de penetrar. Con nuestro conocimiento del caso de marketing de negocios, le haremos pasar por el proceso efectivo de generación de prospectos con publicidad efectiva en línea y fuera de línea. Hemos trabajado con varias corporaciones, agencias privadas y organizaciones sin fines de lucro y no estamos limitados por la industria o el tamaño del negocio.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+        <section id="projects">
+          <div class="projects-container">
+            <div class="heading">
+              <h2 class="title">Portafolio</h2>
+              <div class="separator"></div>
+              <p class="subtitle">Aquí encontrarás algunos de nuestros últimos trabajos o los más relevantes. Así podrás darte una idea de en qué o cuáles servicios podríamos ayudarte. Si no encuentras lo que deseas no dudes en contactarnos.</p>
+            </div>
+    
+            <div onclick="toggleMoreIcon('01')" class="project">
+              <div class="project-details">
+                <a onclick="toggleSliderImpresiones()" class="project-tile">Impresiones</a>
+                <div class="icons">
+                  <!-- Add icons as needed -->
+                </div>
+                <p>Revisa algunos de nuestros trabajos. Contamos con todo tipo de impresiones, desde tarjetas de presentación hasta lonas vinyl para espectaculares. Nuestra calidad de impresión es la mejor de la zona.</p>
+              </div>
+              
+    
+              <div id="01" class="project-image">
+                <a onclick="toggleSliderImpresiones()" class="project-link">
+                  <img src="images/sliders/a/a.jpg" alt="Project Image">
+                  <span class="icon"></span>
+                </a>
+              </div>
+            </div>
+            
+            <div class="card-wrapper-impresiones inactive">
+              <div class="card-container-impresiones">
+                  <input type="radio" name="slide-a" id="a1" checked>
+                  <label for="a1" class="card">
+                      
+                  </label>
+                  <input type="radio" name="slide-a" id="a2" >
+                  <label for="a2" class="card">
+                      
+                  </label>
+                  <input type="radio" name="slide-a" id="a3" >
+                  <label for="a3" class="card">
+                      
+                  </label>
+                  <input type="radio" name="slide-a" id="a4" >
+                  <label for="a4" class="card">
+                      
+                  </label>
+              </div>
+            </div>
+
+            <div onclick="toggleMoreIcon('02')" class="project">
+              <div class="project-details">
+                <a onclick="toggleSliderDiseno()" class="project-tile">Diseño</a>
+                <div class="icons">
+                  <!-- Add icons as needed -->
+                </div>
+                <p>Revisa algunos de nuestros trabajos. Contamos con todo tipo de impresiones, desde tarjetas de presentación hasta lonas vinyl para espectaculares. Nuestra calidad de impresión es la mejor de la zona.</p>
+              </div>
+    
+              <div id="02" class="project-image">
+                <a onclick="toggleSliderDiseno()" class="project-link">
+                  <img src="images/sliders/b/b.jpg" alt="Project Image">
+                  <span class="icon"></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="card-wrapper-diseno inactive">
+              <div class="card-container-diseno">
+                  <input type="radio" name="slide-b" id="b1" checked>
+                  <label for="b1" class="card">
+                      
+                  </label>
+                  <input type="radio" name="slide-b" id="b2" >
+                  <label for="b2" class="card">
+                      
+                  </label>
+                  <input type="radio" name="slide-b" id="b3" >
+                  <label for="b3" class="card">
+                      
+                  </label>
+                  <input type="radio" name="slide-b" id="b4" >
+                  <label for="b4" class="card">
+                      
+                  </label>
+              </div>
+            </div>
+            
+            <div onclick="toggleMoreIcon('03')" class="project">
+              <div class="project-details">
+                <a onclick="toggleSliderPublicidad()" class="project-tile">Publicidad</a>
+                <div class="icons">
+                  <!-- Add icons as needed -->
+                </div>
+                <p>Revisa algunos de nuestros trabajos. Contamos con todo tipo de impresiones, desde tarjetas de presentación hasta lonas vinyl para espectaculares. Nuestra calidad de impresión es la mejor de la zona.</p>
+              </div>
+    
+              <div id="03" class="project-image">
+                <a onclick="toggleSliderPublicidad()" class="project-link">
+                  <img src="images/sliders/c/c.jpg" alt="Project Image">
+                  <span class="icon"></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="card-wrapper-publicidad inactive">
+              <div class="card-container-publicidad">
+                  <input type="radio" name="slide-c" id="c1" checked>
+                  <label for="c1" class="card">
+                      
+                  </label>
+                  <input type="radio" name="slide-c" id="c2" >
+                  <label for="c2" class="card">
+                      
+                  </label>
+                  <input type="radio" name="slide-c" id="c3" >
+                  <label for="c3" class="card">
+                      
+                  </label>
+                  <input type="radio" name="slide-c" id="c4" >
+                  <label for="c4" class="card">
+                      
+                  </label>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+    
+        <section id="clients">
+            <div class="clients-container">
+              <div class="heading">
+                <h2 class="title">Clientes</h2>
+                <div class="separator"></div>
+                <p class="subtitle">En Hermes Publicistas nuestro principal objetivo es la satisfacción de nuestros clientes. Ellas y ellos nos permiten crecer como proveedores de servicios mientras que nosotros les brindamos los productos de mayor calidad.</p>
+              </div>
+        
+              <div class="project">
+                <div class="project-details">
+                  <h3 class="project-tile">
+                    <a href="https://www.casavaladez.com" >Casa Valadez</a>
+                  </h3>
+                  <div class="icons">
+                    <!-- Add icons as needed -->
+                  </div>
+                  <p>Hemos trabajado con Hermes Publicistas desde hace más de 30 años, y son una empresa más que responsable con sus servicios.</p>
+                </div>
+        
+                <div class="project-image">
+                  <a href="https://www.casavaladez.com" class="project-link">
+                    <img src="images/clients/casa_valadez.png" alt="Project Image">
+                  </a>
+                </div>
+              </div>
+            </div>
+        </section>
+    
+        <section id="contact">
+            <div class="container">
+                <div class="heading-wrapper">
+                    <div class="heading">
+                        <p class="title">
+                            ¡Contáctanos!
+                        </p>
+                        <p class="separator"></p>
+                        <p class="subtitle">
+                            Envía un mensaje por:
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                  <div class="column">
+                    <a href="mailto:sergioapelayoe@gmail.com" class="link">
+                      <div class="image-whatsapp"></div>
+                    </a>
+                    <a href="mailto:sergioapelayoe@gmail.com" class="link">
+                      <p class="icon-title">+52 473 120 1945</p> 
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="mailto:sergioapelayoe@gmail.com" class="link">
+                      <div class="image-ig"></div>
+                    </a>
+                    <a href="mailto:sergioapelayoe@gmail.com" class="link">
+                      <p class="icon-title">@hermes_publicistas</p> 
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="mailto:sergioapelayoe@gmail.com" class="link">
+                      <div class="image-mail"></div>
+                    </a>
+                    <a href="mailto:sergioapelayoe@gmail.com" class="link">
+                      <p class="icon-title">hermespublicistas@gmail.com</p> 
+                    </a>
+                  </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="wrapper">
+                <h3>Gracias por visitarnos.</h3>
+                <p>© 2024 Hermes Publicistas.</p>
+                <!-- Include SocialLinks component here if needed -->
+            </div>
+        </footer>
+    
+        <script src="script.js"></script>
+
+    </body>
+</html>
