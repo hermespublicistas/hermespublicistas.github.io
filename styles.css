@@ -12,10 +12,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --primary-color: #0a0a18; /*#202124*/
-  --primary-color_var: #080817d6; /*#202124c2*/
-  --primary_background: #0d0d1d; /*#1d1d1f*/
-  --primary_background_var: #0c0c1be1; /*#1f1f1f*/
+  --primary-color: #0a0a18; 
+  --primary-color_var: #080817d6; 
+  --primary_background: #0d0d1d; 
+  --primary_background_var: #0c0c1be1;
   --secondary-color: #f2f2f2;
   --secondary-color_var: #f0f0f0aa;
   --houses: url(images/dark-theme/houses_gto_night.svg);
@@ -43,8 +43,8 @@ html{
 
 body {
   height: 100%;
-  --primary-color: #f2f2f2; /* #f2f2f2*/
-  --primary-color_var: #f0f0f0aa; /* #F1F1F1aa*/
+  --primary-color: #f2f2f2;
+  --primary-color_var: #f0f0f0aa;
   --primary_background: #fafafa;
   --primary_background_var: #f9f9f9;
   --secondary-color: #202124;
@@ -54,9 +54,9 @@ body {
   --about_image: url(images/light-theme/carlos_nerber_gto.jpg);
   --envelope: url(images/light-theme/envelope.svg);
   --sky: #46B4F2;
-  --highlight_1: #EB455F; /* #E63E6D*/
+  --highlight_1: #EB455F; 
   --highlight_2: #13bbf8;
-  --welcome_contact_border: #EB455F; /* #B42B51*/
+  --welcome_contact_border: #EB455F; 
   --welcome_contact_fill: #19376D;
   --welcome_first_button_highlight: #2c3080;
   --menu_item: #202124c2; 
@@ -292,12 +292,12 @@ a:active {
 
 .menu-container a,
 .menu-container a:visited {
-  color: var(--menu_item); /* white*/
+  color: var(--menu_item); 
 }
 
 .menu-container a:hover,
 .menu-container a:active {
-  color: var(--menu_item_highlight); /* whiter or highlight*/
+  color: var(--menu_item_highlight); 
 }
 
 @media only screen and (max-width: 950px) {
@@ -377,7 +377,7 @@ a:active {
 }
 
 #navbar.bg-active {
-  background: #080817; /* #111111 */
+  background: #080817; 
 }
 
 #navbar .nav-wrapper {
@@ -454,15 +454,13 @@ a:active {
   cursor: pointer;
   background: var(--theme_icon) center center/contain no-repeat;
   border: none;
-  width: 50px; /* Adjust the width of the image as needed */
-  height: 25px; /* Adjust the height of the image as needed */
-  /*padding-right: 4rem;*/
-  margin-left: auto; /* Adjusted margin to give space between theme button and hamburger */
+  width: 50px; 
+  height: 25px; 
+  margin-left: auto; 
 }
 
 #navbar .theme-button:hover {
   background: var(--theme_icon_hover) center center/contain no-repeat;
-  /*transition: 200ms cubic-bezier(0.77, 0, 0.175, 1);*/
 }
 
 @media only screen and (max-width: 849px) {
@@ -500,7 +498,7 @@ a:active {
   background-size: cover;
   position: relative;
   min-height: 100vh;
-  margin: 0 auto; /*0 auto */
+  margin: 0 auto; 
   z-index: 1;
 }
 
@@ -528,7 +526,7 @@ a:active {
 
 .houses {
   position: absolute;
-  bottom: -300px; /* -300px*/
+  bottom: -300px; 
   left: 0;
   background: var(--houses) bottom left repeat-x;
   background-size: cover;
@@ -554,7 +552,6 @@ a:active {
   position: absolute;
   bottom: 0;
   left: 0;
-  /*background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Silhouette.svg?sanitize=true)bottom left no-repeat;*/ 
   width: 50%;
   height: 50%;
   opacity: 0;
@@ -575,7 +572,7 @@ a:active {
 .logo_hermes {
   position: absolute;
   top: 0;
-  left: 0; /* right*/
+  left: 0; 
   position: fixed;
   background: var(--hermes_logo) right 150% no-repeat;
   background-size: 40% 70%;
@@ -590,11 +587,11 @@ a:active {
 @keyframes logo_hermes-move-in {
   from {
     opacity: 0;
-    background-position: left 150%; /* right*/
+    background-position: left 150%; 
   }
   to {
     opacity: 1;
-    background-position: 15% 0%; /* top right*/
+    background-position: 15% 0%; 
   }
 }
 
@@ -690,11 +687,7 @@ a:active {
   font-style: italic;
 }
 
-/*@media only screen and (max-height: 450px) {
-    #welcome-section .houses {
-      height: 130%;
-    }
-}*/
+
 
 /* ****** SMATPHONES*********** */
 @media only screen and (max-width: 600px) and (orientation: portrait) {
@@ -711,11 +704,11 @@ a:active {
   @keyframes logo_hermes-move-in {
     from {
       opacity: 0;
-      background-position: left 150%; /* right*/
+      background-position: left 150%; 
     }
     to {
       opacity: 1;
-      background-position: 50% -10%; /* top right*/
+      background-position: 50% -10%; 
     }
   }
 
@@ -733,12 +726,12 @@ a:active {
   }
 
     #welcome-section .container .line {
-    font-size: 55%; /* Adjust the font size as needed */
+    font-size: 55%; 
   }
     #welcome-section .container .buttons a {
     text-align: center;
     font-size: 90%;
-    margin-top: 0em; /* Adjust the font size as needed */
+    margin-top: 0em; 
   }
   
   @keyframes text-fade-in {
@@ -775,7 +768,7 @@ a:active {
   }
 
     #welcome-section .container .line {
-    font-size: 61%; /* Adjust the font size as needed */
+    font-size: 61%; 
   }
 
   #welcome-section .container .buttons {
@@ -787,7 +780,7 @@ a:active {
     #welcome-section .container .buttons a {
     text-align: center;
     font-size: 100%;
-    margin-top: 0em; /* Adjust the font size as needed */
+    margin-top: 0em; 
   }
   
   @keyframes text-fade-in {
@@ -880,7 +873,7 @@ a:active {
 
 #about p {
   padding-bottom: 1.5rem;
-  color: var(--secondary-color_var); /* #555*/
+  color: var(--secondary-color_var);
   line-height: 1.9rem;
   text-align: justify-all;
 }
@@ -950,7 +943,6 @@ a:active {
   min-height: 100vh;
   font-size: 1.4rem;
   position: relative;
-  /*background: var(--primary_background_var);*/
   background: linear-gradient(215deg, var(--primary_background_var) 0%, var(--primary-color) 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 95%, 0 100%);
   margin-top: -10rem;
@@ -1076,7 +1068,6 @@ a:active {
   width: 100%;
   position: relative;
   display: inline-block;
-  /*max-width: 400px;*/ /* Adjust the max-width as needed */
 }
 
 #projects .icon {
@@ -1456,7 +1447,6 @@ footer .wrapper {
 
 #clients .project-details .project-tile {
   font-size: 2rem;
-  /*text-transform: uppercase;*/
   font-weight: bold;
   margin-bottom: 1rem;
   color: var(--highlight_1);
@@ -1508,7 +1498,6 @@ footer .wrapper {
 #clients .project-image {
   width: 100%;
   order: 1;
-  /*max-width: 400px;*/ /* Adjust the max-width as needed */
 }
 
 #clients .project-link {
@@ -1590,74 +1579,71 @@ footer .wrapper {
   display: none;
 }
  .card-wrapper-impresiones.active {
-  width: 100%; /*100%*/
+  width: 100%; 
   height: 100vh;
   display: contents;
-  /*align-items: center;*/
   justify-content: center;
 }
 
 .card-container-impresiones {
   animation: fade-in 800ms forwards;
-  padding: 1rem; /*original without this one*/
-  height: 50%; /*400px*/
+  padding: 1rem; 
+  height: 50%; 
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center; /*start*/
+  justify-content: center; 
 }
 
 .card-wrapper-diseno.inactive {
   display: none;
 }
  .card-wrapper-diseno.active {
-  width: 100%; /*100%*/
+  width: 100%; 
   height: 100vh;
   display: contents;
-  /*align-items: center;*/
   justify-content: center;
 }
 
 .card-container-diseno {
   animation: fade-in 800ms forwards;
-  padding: 1rem; /*original without this one*/
-  height: 50%; /*400px*/
+  padding: 1rem; 
+  height: 50%;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center; /*start*/
+  justify-content: center; 
 }
 
 .card-wrapper-publicidad.inactive {
   display: none;
 }
  .card-wrapper-publicidad.active {
-  width: 100%; /*100%*/
+  width: 100%; 
   height: 100vh;
   display: contents;
-  /*align-items: center;*/
   justify-content: center;
 }
 
 .card-container-publicidad {
   animation: fade-in 800ms forwards;
-  padding: 1rem; /*original without this one*/
-  height: 50%; /*400px*/
+  padding: 1rem; 
+  height: 50%; 
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center; /*start*/
+  justify-content: center; 
 }
 
 .card {
-  width: 8rem; /*80px*/
+  width: 8rem; 
   border-radius: .75rem;
   background-color: #030a17;
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
   border-radius: 2rem;
-  margin: 0 .25rem; /*0 10px*/
+  margin: 0 .25rem; 
   display: flex;
   align-items: flex-end;
   transition:  0.9s cubic-bezier(.28,-0.03,0,.99);
@@ -1671,14 +1657,14 @@ footer .wrapper {
 }
 
 .card > .row > .icon {
-  background: #32353b72; /*rgb(19, 99, 100) */
-  color: rgba(20, 157, 125, 0.705);/*rgb(182, 229, 250) */
+  background: #32353b72; 
+  color: rgba(20, 157, 125, 0.705);
   border-radius: 50%;
-  width: 50px; /*2.5rem*/
+  width: 50px; 
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px; /*0.75rem*/
+  margin: 15px; 
 }
 
 .card > .row > .description {
@@ -1686,7 +1672,7 @@ footer .wrapper {
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  height: 80px; /*4rem*/
+  height: 80px;
   width: 520px;
   opacity: 0;
   transform: translateY(5rem);
@@ -1696,7 +1682,7 @@ footer .wrapper {
 
 .description p {
   color: rgba(20, 157, 125, 0.705);
-  padding-top: 0.35rem; /*5px*/
+  padding-top: 0.35rem; 
 }
 
 .description h4 {
@@ -1708,7 +1694,7 @@ input {
 }
 
 input:checked + label {
-  width: 600px; /* 600px must be wide enough to capture the description text 470*/
+  width: 600px; 
   background-position: center center;
   background-repeat: no-repeat;
 }
