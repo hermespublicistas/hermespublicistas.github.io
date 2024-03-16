@@ -144,6 +144,9 @@ function toggleMoreIcon(imageID) {
     }
 }
 
+
+
+
 const swipeSensitiveComponentA = document.getElementById("swipe-a");
 
 let touchstartX = 0;
@@ -175,6 +178,7 @@ swipeSensitiveComponentB.addEventListener('touchend', function(event) {
 
 
 
+
 const swipeSensitiveComponentC = document.getElementById("swipe-c");
 
 swipeSensitiveComponentC.addEventListener('touchstart', function(event) {
@@ -186,27 +190,27 @@ swipeSensitiveComponentC.addEventListener('touchend', function(event) {
     handleSwipe("c");
 }, false);
 
+
+
+
 function handleSwipe(SliderID) {
-    const totalSlides = 4; // Total number of slides
-    let currentSlide = 1;  // Initial slide
+    const totalSlides = 4; 
+    let currentSlide = 1; 
 
     // Get the currently checked slide
     const checkedInput = document.querySelector('input[name="slide-'+ SliderID +'"]:checked');
     if (checkedInput) {
-        currentSlide = parseInt(checkedInput.id.slice(1)); // Extract the number from the id
+        currentSlide = parseInt(checkedInput.id.slice(1)); 
     }
 
     if (touchendX < touchstartX && currentSlide < totalSlides) {
-        // Swipe left
         currentSlide++;
     }
 
     if (touchendX > touchstartX && currentSlide > 1) {
-        // Swipe right
         currentSlide--;
     }
 
-    // Update the checked radio button
     document.getElementById(SliderID + currentSlide).checked = true;
 }
 
