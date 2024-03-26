@@ -3,15 +3,20 @@ function toggleMenu() {
     const overlay = document.querySelector('.menu-container > .overlay');
 
     if (menuContainer.classList.contains('active')) {
+        
         menuContainer.classList.remove('active');
         menuContainer.classList.add('inactive');
         overlay.style.animation = '';
 
+        
         removeMenuEventListeners();
     } else {
+        
         menuContainer.classList.remove('inactive');
         menuContainer.classList.add('active');
         overlay.style.animation = 'overlay-slide-in 200ms forwards 200ms';
+
+        /
         addMenuEventListeners();
     }
 }
@@ -19,10 +24,12 @@ function toggleMenu() {
 function handleMenuItemClick(e) {
     e.preventDefault();
     const targetSection = document.querySelector(e.target.hash);
+    
+
+    
     setTimeout(() => {
         toggleMenu();
     }, 500); 
-}
 
 function addMenuEventListeners() {
     document.querySelectorAll('.menu-container ul li a').forEach(link => {
@@ -50,6 +57,7 @@ function toggleTheme() {
         } else {
             body.classList.add('dark-theme');
         }
+
         setTimeout(() => {
             body.classList.remove('theme-transition');
         }, 200); 
@@ -61,6 +69,7 @@ function toggleSliderImpresiones() {
     const cardContainer = cardwrapper.querySelector('.card-container-impresiones'); 
 
     if (cardwrapper.classList.contains('active')) {
+        
         cardwrapper.classList.remove('active');
         cardwrapper.classList.add('inactive');
 
@@ -79,6 +88,7 @@ function toggleSliderImpresiones() {
             behavior: 'smooth'
         });
     }
+    
 }
 
 function toggleSliderDiseno() {
@@ -191,7 +201,8 @@ swipeSensitiveComponentC.addEventListener('touchend', function(event) {
 
 function handleSwipe(SliderID) {
     const totalSlides = 4; 
-    let currentSlide = 1;
+    let currentSlide = 1;  
+
     const checkedInput = document.querySelector('input[name="slide-'+ SliderID +'"]:checked');
     if (checkedInput) {
         currentSlide = parseInt(checkedInput.id.slice(1)); 
@@ -204,8 +215,8 @@ function handleSwipe(SliderID) {
     if (touchendX > touchstartX && currentSlide > 1) {
         currentSlide--;
     }
+
     document.getElementById(SliderID + currentSlide).checked = true;
 }
-
 
 
