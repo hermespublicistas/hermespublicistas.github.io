@@ -6,6 +6,7 @@ function toggleMenu() {
         menuContainer.classList.remove('active');
         menuContainer.classList.add('inactive');
         overlay.style.animation = '';
+
         removeMenuEventListeners();
     } else {
         menuContainer.classList.remove('inactive');
@@ -20,7 +21,7 @@ function handleMenuItemClick(e) {
     const targetSection = document.querySelector(e.target.hash);
     setTimeout(() => {
         toggleMenu();
-    }, 500);
+    }, 500); 
 }
 
 function addMenuEventListeners() {
@@ -40,7 +41,9 @@ addMenuEventListeners();
 function toggleTheme() {
     const body = document.body;
     const currentTheme = body.classList.contains('dark-theme') ? 'dark-theme' : 'light-theme';
+
     body.classList.add('theme-transition');
+
     setTimeout(() => {
         if (currentTheme === 'dark-theme') {
             body.classList.remove('dark-theme');
@@ -49,16 +52,15 @@ function toggleTheme() {
         }
         setTimeout(() => {
             body.classList.remove('theme-transition');
-        }, 500); 
+        }, 200); 
     }, 200); 
 }
 
 function toggleSliderImpresiones() {
     const cardwrapper = document.querySelector('.card-wrapper-impresiones');
     const cardContainer = cardwrapper.querySelector('.card-container-impresiones'); 
-    
+
     if (cardwrapper.classList.contains('active')) {
-        // If menu is active, deactivate it
         cardwrapper.classList.remove('active');
         cardwrapper.classList.add('inactive');
 
@@ -67,7 +69,6 @@ function toggleSliderImpresiones() {
             top: - window.innerHeight / 2,
             behavior: 'smooth'
         });
-        
     } else {
         cardwrapper.classList.remove('inactive');
         cardwrapper.classList.add('active');
@@ -93,10 +94,10 @@ function toggleSliderDiseno() {
             top: - window.innerHeight / 2,
             behavior: 'smooth'
         });
-        
     } else {
         cardwrapper.classList.remove('inactive');
         cardwrapper.classList.add('active');
+
         addMenuEventListeners();
         window.scrollBy({
             top: cardContainer.offsetHeight,
@@ -118,10 +119,10 @@ function toggleSliderPublicidad() {
             top: - window.innerHeight / 2,
             behavior: 'smooth'
         });
-        
     } else {
         cardwrapper.classList.remove('inactive');
         cardwrapper.classList.add('active');
+
         addMenuEventListeners();
         window.scrollBy({
             top: cardContainer.offsetHeight,
@@ -143,7 +144,6 @@ function toggleMoreIcon(imageID) {
         icon.style.backgroundImage = 'url("images/icons/minus.png")';
     }
 }
-
 
 
 
@@ -178,7 +178,6 @@ swipeSensitiveComponentB.addEventListener('touchend', function(event) {
 
 
 
-
 const swipeSensitiveComponentC = document.getElementById("swipe-c");
 
 swipeSensitiveComponentC.addEventListener('touchstart', function(event) {
@@ -190,14 +189,9 @@ swipeSensitiveComponentC.addEventListener('touchend', function(event) {
     handleSwipe("c");
 }, false);
 
-
-
-
 function handleSwipe(SliderID) {
     const totalSlides = 4; 
-    let currentSlide = 1; 
-
-    // Get the currently checked slide
+    let currentSlide = 1;
     const checkedInput = document.querySelector('input[name="slide-'+ SliderID +'"]:checked');
     if (checkedInput) {
         currentSlide = parseInt(checkedInput.id.slice(1)); 
@@ -210,8 +204,8 @@ function handleSwipe(SliderID) {
     if (touchendX > touchstartX && currentSlide > 1) {
         currentSlide--;
     }
-
     document.getElementById(SliderID + currentSlide).checked = true;
 }
+
 
 
