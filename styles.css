@@ -1384,10 +1384,11 @@ a:active {
     display: block;
   }
   .contact-form {
+    display: block;
     grid-template-columns: 1fr;
   }
   .heading-wrapper .heading .title {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 }
 
@@ -1400,13 +1401,13 @@ a:active {
     padding: 30vh 0;
   }
   .contact-form {
+    display: block;
     grid-template-columns: 1fr;
   }
   .heading-wrapper .heading .title {
     font-size: 1.7rem;
   }
 }
-
 
 
 
