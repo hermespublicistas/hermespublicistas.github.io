@@ -1397,6 +1397,15 @@ a:active {
   .heading-wrapper .heading .title {
     font-size: 2rem;
   }
+  .contact-form .column .image-whatsapp:hover{
+    background-image: url('images/icons/social/whatsapp.png');
+  }
+  .contact-form .column .image-mail:hover{
+    background-image: url('images/icons/social/email.png');
+  }
+  .contact-form .column .image-ig:hover{
+    background-image: url('images/icons/social/instagram.png');
+  }
 }
 
 @media only screen and (max-width: 649px) {
@@ -1413,6 +1422,26 @@ a:active {
   }
   .heading-wrapper .heading .title {
     font-size: 1.7rem;
+  }
+  .contact-form .column .image-whatsapp:hover{
+    background-image: url('images/icons/social/whatsapp.png');
+  }
+  .contact-form .column .image-mail:hover{
+    background-image: url('images/icons/social/email.png');
+  }
+  .contact-form .column .image-ig:hover{
+    background-image: url('images/icons/social/instagram.png');
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .contact-form .column .image-whatsapp:hover{
+    background-image: url('images/icons/social/whatsapp.png');
+  }
+  .contact-form .column .image-mail:hover{
+    background-image: url('images/icons/social/email.png');
+  }
+  .contact-form .column .image-ig:hover{
+    background-image: url('images/icons/social/instagram.png');
   }
 }
 
